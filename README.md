@@ -1,6 +1,6 @@
 javascript 3.0
 
-# goit-js-hw-02
+# goit-js-hw-03
 
 3. Module 3. Arrays and functions. (Mодуль 3. Масиви і функції.)
 
