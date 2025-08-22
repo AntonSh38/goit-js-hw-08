@@ -2,7 +2,7 @@ javascript 3.0
 
 # goit-js-hw-05
 
-4. Module 5. Array iteration methods. (Mодуль 5. Перебираючі методи масивів)
+5. Module 5. Array iteration methods. (Mодуль 5. Перебираючі методи масивів)
 
    <!-- Виконуй це завдання у файлі task-1.js -->
 
