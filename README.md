@@ -2,7 +2,7 @@ javascript 3.0
 
 # goit-js-hw-06
 
-5. Module 6. PLO. Clasi (Mодуль 6. ООП. Класи)
+6. Module 6. PLO. Clasi (Mодуль 6. ООП. Класи)
 
    <!-- Виконуй це завдання у файлі task-1.js -->
 
