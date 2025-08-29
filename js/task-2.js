@@ -29,7 +29,7 @@ const listEl = document.querySelector('.gallery');
 images.forEach(image => {
   console.log(image);
   listEl.insertAdjacentHTML(
-    'afterbegin',
+    'beforeend',
     `<li>
       <img src="${image.url}" alt="${image.alt}" />
     </li>
