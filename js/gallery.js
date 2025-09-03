@@ -65,24 +65,35 @@ const images = [
 ];
 
 const galleryMarcup = document.querySelector('.gallery');
-
 galleryMarcup.addEventListener('click', onGalleryMarcup);
 
-images
-  .map(image => {
-    galleryMarcup.innerHTML += `<li class="gallery-item">
-        <a class="gallery-link" href="${image.original}">
+function createMarcup(arr) {
+  return arr
+    .map(element => {
+      return `<li class="gallery-item">
+        <a class="gallery-link" href="${element.original}">
           <img
             class="gallery-image"
-            src="${image.preview}"
-            data-source="${image.original}"
-            alt="${image.description}"
+            src="${element.preview}"
+            data-source="${element.original}"
+            alt="${element.description}"
           />
         </a>
       </li>`;
-  })
-  .join('');
+    })
+    .join('');
+}
+
+galleryMarcup.innerHTML = createMarcup(images);
 
 function onGalleryMarcup(event) {
+  event.preventDefault();
+
   if (event.target.nodeName !== 'IMG') return;
+
+  const instance = basicLightbox.create(`
+    <img src="${event.target.dataset.source}" width="800" height="600">
+`);
+
+  instance.show();
 }
